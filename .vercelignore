@@ -1,0 +1,3 @@
+*.log
+.next/cache
+node_modules

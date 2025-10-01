@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://proptechmx.vercel.app/sitemap.xml

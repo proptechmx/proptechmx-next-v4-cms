@@ -1,0 +1,1 @@
+export default function NotFound(){return (<div className='min-h-screen flex items-center justify-center p-8 text-center'><div><h1 className='text-3xl font-extrabold'>Página no encontrada</h1><p className='text-zinc-600 mt-2'>La oportunidad que buscas no existe.</p><a href='/' className='inline-block mt-4 underline'>Volver al inicio</a></div></div>)}
