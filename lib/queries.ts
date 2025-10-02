@@ -35,3 +35,30 @@ export const PROJECT_DETAIL_QUERY = `
   }
 }
 `
+
+// lib/queries.ts
+export const homeProjectsQuery = /* groq */ `
+*[_type == "project"] | order(_createdAt desc)[0...3]{
+  _id,
+  title,
+  "slug": slug.current,
+  summary,
+  city,
+  status,
+  "cover": coalesce(cover.asset->url, images[0].asset->url)
+}
+`;
+
+// lib/queries.ts (añade esto a tu archivo)
+export const projectsListQuery = /* groq */ `
+*[_type == "project" && (!defined($status) || status == $status)]
+| order(_createdAt desc){
+  _id,
+  title,
+  "slug": slug.current,
+  summary,
+  city,
+  status,
+  "cover": coalesce(cover.asset->url, images[0].asset->url)
+}
+`;

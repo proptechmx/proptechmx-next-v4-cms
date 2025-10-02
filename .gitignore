@@ -13,3 +13,4 @@ echo .env.local
 echo .env.production
 echo .DS_Store
 ) > .gitignore
+.vercel

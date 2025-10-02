@@ -1,3 +1,3 @@
+# Seguro dejar vacío, o solo:
 *.log
-.next/cache
-node_modules
+.next/
